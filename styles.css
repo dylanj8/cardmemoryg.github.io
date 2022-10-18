@@ -1,0 +1,88 @@
+h1 {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.grid-container {
+  margin: 150px auto;
+  display: grid;
+  grid-gap: 20px 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  height: 900px;
+  width: 700px;
+}
+
+.card {
+  width: 100%;
+  /* height: 400px; */
+  background: url(./images/back.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.1);
+  border: 1px solid black;
+}
+
+.ace {
+  background: url(./images/ace.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.king {
+  background: url(./images/king.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.queen {
+  background: url(./images/queen.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.jack {
+  background: url(./images/jack.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.joker {
+  background: url(./images/joker.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.ten {
+  background: url(./images/ten.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.bg-hidden {
+  background: url(./images/back.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.card.done {
+  cursor: default;
+}
+.card.done:hover {
+  transform: none;
+}
